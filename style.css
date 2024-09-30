@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: orangered;
+}
+
+.header-title h1 {
+    font-size: 1.5em;
+    color: orangered;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: grey;
+}
+
+.main-content {
+    background-color:  #837a7a;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.main-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.About{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241,241,241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.about-content{
+    max-width: 800px;
+}
+
+.about-content h3{
+    font-size: 42px;
+}
+
+.about-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+
+}
+
+.about-content p{
+    font-size: 18px;
+    margin: 25px 0 30px ;
+}
+
+.img-box img{
+    border-radius: 50%;
+    width: 450px;
+
+}
+span{
+    color: orangered;
+}
+.bottom-content h2{
+    margin-top: 1%;
+}
+.bottom-content h2:nth-last-of-type(2){
+    margin-left: 70px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.bottom-content i {
+    font-size: 40px;
+    color: rgb(73, 73, 180);
+    margin-top: 1%;
+    margin-bottom: 3px;
+    
+}
+
+
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+
+}
+
+#slider figure img{
+    float:left;
+    width: 20%;
+}
+
+@keyframes slider{
+    0%{
+        left: 0;
+
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+
+.slider-logo h1{
+    font-size: 2em;
+    font-weight: bold;
+    color: orangered;
+    
+
+}
+
+
+
+
+
+footer {
+    background-color:#F9E795;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
